@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             Title="Picker Demo"
+             x:Class="ControlsDemo.Pages.DemoPageFirst">
+  <StackLayout Padding="10" VerticalOptions="FillAndExpand">
+    <Picker x:Name="myPicker" SelectedIndex="{Binding SelectedIndex, Mode=TwoWay}" />
+    <Label Text="{Binding SelectedPickerItem.Name, StringFormat='uoY evaH detceleS {0:}'}" TextColor="White" Font="Large"></Label>
+      <Image HorizontalOptions="Center" VerticalOptions="CenterAndExpand" Opacity="0.5" Source="bicon.png"></Image>
+  </StackLayout>
+</ContentPage>
